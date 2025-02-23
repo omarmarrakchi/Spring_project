@@ -1,9 +1,6 @@
 package com.example.springproject.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,6 +8,7 @@ import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @NoArgsConstructor
@@ -26,4 +24,7 @@ public class Etudiant implements Serializable {
     private String ecole;
     @Temporal( TemporalType.DATE)
     private Date dateNaissance;
+
+    @ManyToMany(mappedBy = "etudiants")
+    private List<Reservation> reservations;
 }

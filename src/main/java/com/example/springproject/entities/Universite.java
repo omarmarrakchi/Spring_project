@@ -2,6 +2,7 @@ package com.example.springproject.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -19,4 +20,7 @@ public class Universite implements Serializable {
     private long idUniversite;
     private String nomUniversite;
     private String adresse;
+
+    @OneToOne(mappedBy = "universite")
+    private Foyer foyer;
 }
