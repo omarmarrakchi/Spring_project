@@ -15,6 +15,7 @@ import java.util.List;
 @Getter
 @Setter
 public class Chambre implements Serializable {
+
     @Id
     private long idChambre;
     private long numeroChambre;

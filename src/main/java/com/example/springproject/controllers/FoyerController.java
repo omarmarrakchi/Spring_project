@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/foyer")
 @AllArgsConstructor
 public class FoyerController {
+
     IFoyerServices foyerService;
 
     @PostMapping("/saveFoyer")

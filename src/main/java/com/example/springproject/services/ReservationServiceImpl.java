@@ -22,7 +22,7 @@ public class ReservationServiceImpl implements IReservationServices{
 
     @Override
     public Reservation updateReservation(Reservation res) {
-        if (reservationRepository.existsById(Long.valueOf(res.getIdReservation()))) {
+        if (reservationRepository.existsById(Long.valueOf(res.getIdResvation()))) {
             return reservationRepository.save(res);
         }
         return null;

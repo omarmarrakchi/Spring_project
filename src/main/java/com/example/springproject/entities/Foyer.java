@@ -25,4 +25,12 @@ public class Foyer implements Serializable {
 
     @OneToMany(mappedBy = "foyer")
     private List<Bloc> blocs;
+
+    public Universite getUniversite() {
+        return universite;
+    }
+
+    public void setUniversite(Universite universite) {
+        this.universite = universite;
+    }
 }

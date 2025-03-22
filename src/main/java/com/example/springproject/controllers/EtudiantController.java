@@ -12,6 +12,7 @@ import java.util.List;
 @RequestMapping("/etudiant")
 @AllArgsConstructor
 public class EtudiantController {
+
     IEtudiantServices etudiantService;
 
     @GetMapping("/getAllEtudiants")

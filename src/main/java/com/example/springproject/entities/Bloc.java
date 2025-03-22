@@ -18,6 +18,7 @@ import java.util.List;
 @Getter
 @Setter
 public class Bloc implements Serializable {
+
     @Id
     private long idBloc;
     private String nomBloc;

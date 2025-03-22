@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.List;
 
 public interface IUniversiteServices {
+
     List<Universite> retrieveAllUniversities();
     Universite addUniversite (Universite u);
     Universite updateUniversite (Universite u);

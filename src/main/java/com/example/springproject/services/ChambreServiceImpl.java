@@ -1,9 +1,9 @@
 package com.example.springproject.services;
 
 import com.example.springproject.entities.Chambre;
+import com.example.springproject.entities.Foyer;
+import com.example.springproject.entities.TypeChambre;
 import com.example.springproject.repositories.IChambreRepository;
-import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,12 +13,15 @@ import java.util.List;
 @Service
 
 public class ChambreServiceImpl implements IChambreServices {
+
+
+    private final IChambreRepository chambreRepository;
     @Autowired
     public ChambreServiceImpl(IChambreRepository chambreRepository) {
         this.chambreRepository = chambreRepository;
     }
 
-    private final IChambreRepository chambreRepository;
+
 
     @Override
     public List<Chambre> retrieveAllChambres() {

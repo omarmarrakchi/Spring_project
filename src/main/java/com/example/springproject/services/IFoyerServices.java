@@ -8,6 +8,7 @@ import java.util.List;
 
 public interface IFoyerServices {
 
+
     public Foyer findById(long id);
     public List<Foyer> findAll();
     public Foyer save(Foyer foyer);

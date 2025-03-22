@@ -1,4 +1,5 @@
 package com.example.springproject.services;
+import com.example.springproject.entities.Foyer;
 import com.example.springproject.entities.Universite;
 import com.example.springproject.repositories.IFoyerRepository;
 import com.example.springproject.repositories.IUniversiteRepository;
